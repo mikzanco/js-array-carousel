@@ -6,6 +6,7 @@
 
 body{
     background-color: aqua;
+    color: white;
 }
 
 .main-wrapper{
@@ -19,9 +20,15 @@ body{
     height: 50%;
     width: 60%;
     background-color: darkgreen;
+    position: relative;
 }
 
 .slider{
+    width: 100%;
+    height: 100%;
+}
+
+.items-wrapper{
     width: 100%;
     height: 100%;
 }
@@ -31,3 +38,26 @@ body{
     height: 100%;
     object-fit: cover;
 }
+
+
+.btn{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 10px;
+}
+
+.btn.top{
+    top: 3px;
+}
+
+.btn.down{
+    bottom: 3px;
+}
+
