@@ -29,7 +29,6 @@ slider.innerHTML += imagesTags;
 const items = document.getElementsByClassName('item');
 
 
-
 items[counterImages].classList.add('active');
 
 next.addEventListener('click', function() {

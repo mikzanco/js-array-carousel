@@ -79,3 +79,10 @@ body{
 .item.active{
     display: block;
 }
+
+
+.container-img{
+    width: 40px;
+    height: 50%;
+    border: 1px soldi black;
+}
