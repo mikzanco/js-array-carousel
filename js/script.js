@@ -11,7 +11,7 @@ let imagesTags = '';
 const slider = document.querySelector('.items-wrapper');
 
 
-for (let i = 0; i < imagesArray.length; i++) {
+for(let i = 0; i < imagesArray.length; i++){
     
     imagesTags += `
         <img class="item" src="img/${imagesArray[i]}" alt="">
@@ -20,5 +20,28 @@ for (let i = 0; i < imagesArray.length; i++) {
 }
 
 let counterImages = 0;
+const next = document.querySelector('.down');
+const prev = document.querySelector('.top');
+
 
 slider.innerHTML += imagesTags;
+
+const items = document.getElementsByClassName('item');
+
+
+
+items[counterImages].classList.add('active');
+
+next.addEventListener('click', function() {
+    items[counterImages].classList.remove('active');
+
+    items[++counterImages].classList.add('active');
+
+    
+})
+
+prev.addEventListener('click', function() {
+    items[counterImages].classList.remove('active');
+
+    items[--counterImages].classList.add('active');
+})

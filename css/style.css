@@ -20,13 +20,13 @@ body{
     height: 50%;
     width: 60%;
     background-color: darkgreen;
-    
+    position: relative;
 }
 
 .slider{
     width: 100%;
     height: 100%;
-    position: relative;
+    
 }
 
 .slider img{
@@ -57,6 +57,11 @@ body{
     text-align: center;
     line-height: 20px;
     font-size: 10px;
+}
+
+.btn:hover{
+    color: rgb(38, 0, 255);
+    background-color: white;
 }
 
 .btn.top{
