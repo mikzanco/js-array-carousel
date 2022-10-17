@@ -48,15 +48,15 @@ body{
 
 .btn{
     position: absolute;
-    left: 50%;
+    left: 110%;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.5);
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     text-align: center;
-    line-height: 20px;
-    font-size: 10px;
+    line-height: 25px;
+    font-size: 20px;
 }
 
 .btn:hover{
@@ -82,7 +82,14 @@ body{
 
 
 .container-img{
-    width: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 170px;
     height: 50%;
-    border: 1px soldi black;
+    background-color: brown;
+}
+
+.container-img img{
+    width: 100%;
+    height: calc(100% / 5);
 }

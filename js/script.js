@@ -36,6 +36,11 @@ next.addEventListener('click', function() {
 
     items[++counterImages].classList.add('active');
 
+
+    if(counterImages === imagesArray.length -1){
+        counterImages = 0;
+        items[0].classList.add('active');
+    }
     
 })
 
@@ -43,4 +48,9 @@ prev.addEventListener('click', function() {
     items[counterImages].classList.remove('active');
 
     items[--counterImages].classList.add('active');
+
+    if(counterImages === imagesArray.length -1){
+        counterImages = 5;
+        items[5].classList.add('active');
+    }
 })
