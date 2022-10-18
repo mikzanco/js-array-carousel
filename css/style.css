@@ -48,6 +48,7 @@ body{
 
 .btn{
     position: absolute;
+    cursor: pointer;
     left: 110%;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.5);
@@ -57,6 +58,7 @@ body{
     text-align: center;
     line-height: 25px;
     font-size: 20px;
+    z-index: 100;
 }
 
 .btn:hover{
@@ -70,6 +72,10 @@ body{
 
 .btn.down{
     bottom: 3px;
+}
+
+.top:hover .down:hover{
+    background-color: white;
 }
 
 .item{
@@ -86,10 +92,18 @@ body{
     flex-direction: column;
     width: 170px;
     height: 50%;
-    background-color: brown;
+    background-color: black;
 }
 
 .container-img img{
     width: 100%;
     height: calc(100% / 5);
+    opacity: .5;
+}
+
+.container-img img:active{
+
+    opacity: 1;
+    border: 2px solid white;
+    
 }
